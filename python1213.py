@@ -25,7 +25,7 @@ amit most néktek eldalol a ho-ho-ho nagy horgász.
 
 #1
 szo=len(szoveg.split())
-print("A horgász szó előfordulása a szövegben: ",szo)
+print("Szavak előfordulása a szövegben: ",szo)
 #2
 print("A horgász szó előfordulásainak száma: ",szoveg.count("horgász"))
 
@@ -43,4 +43,17 @@ for sz in szoveg:
 print("Szövegben megtalálható számok száma: ", szam,"db")
 
 #5
+mely=['e','é','i','í','ö','ő','ü','ű']
+magas=['a','á','o','ó','u','ú']
 
+melyb=0
+magasb=0
+
+for b in szoveg:
+    if b in mely:
+        melyb +=1
+    elif b in magas:
+        magasb +=1
+
+print("Mély számok: ", melyb)
+print("Magas számok: ", magasb)
