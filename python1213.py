@@ -24,12 +24,10 @@ amit most néktek eldalol a ho-ho-ho nagy horgász.
 """
 
 #1
-horgasz=len(szoveg.split())
-print("A horgász szó előfordulása a szövegben: ",horgasz)
-
-
+szo=len(szoveg.split())
+print("A horgász szó előfordulása a szövegben: ",szo)
 #2
-
+print("A horgász szó előfordulásainak száma: ",szoveg.count("horgász"))
 
 #3
 ho= szoveg.replace("ho-ho-ho","HO-HO-HO")
