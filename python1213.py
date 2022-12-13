@@ -24,9 +24,12 @@ amit most néktek eldalol a ho-ho-ho nagy horgász.
 """
 
 #1
-
+szo=szoveg.split(' ')
+print("Szavak száma: ",len(szo))
 
 #2
+horgasz=szoveg.split("horgász")
+print("A horgász szó előfordulása a szövegben: ",len(horgasz))
 
 
 #3
@@ -34,7 +37,13 @@ ho= szoveg.replace("ho-ho-ho","HO-HO-HO")
 print(ho)
 
 #4
+szamok=['0','1','2','3','4','5','6','7','8','9']
+szam=0
+for sz in szoveg:
+    if sz in szamok:
+        szam +=1
 
+print("Szövegben megtalálható számok száma: ", szam,"db")
 
 #5
 
