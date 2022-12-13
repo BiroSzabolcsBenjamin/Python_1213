@@ -24,12 +24,11 @@ amit most néktek eldalol a ho-ho-ho nagy horgász.
 """
 
 #1
-szo=szoveg.split(' ')
-print("Szavak száma: ",len(szo))
+horgasz=len(szoveg.split())
+print("A horgász szó előfordulása a szövegben: ",horgasz)
+
 
 #2
-horgasz=szoveg.split("horgász")
-print("A horgász szó előfordulása a szövegben: ",len(horgasz))
 
 
 #3
@@ -42,7 +41,7 @@ szam=0
 for sz in szoveg:
     if sz in szamok:
         szam +=1
-
+            
 print("Szövegben megtalálható számok száma: ", szam,"db")
 
 #5
